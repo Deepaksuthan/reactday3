@@ -1,38 +1,125 @@
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding:0.5rem;
+}
 .App {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+
+.navigation{
+  width: 100%;
+}
+.sidebar{
+  width: 100%;
+  height: 200px;
+  background-color: black;
   color: white;
 }
+.style-head,.style-para{
+  position: relative;
+  top: 50px;
+}
+.style-head{
+  font-size: 50px;
+  opacity: 0.95;
+}
+  .style-para{
+  opacity: 0.5;
+}
+.products{
+  width: 100%;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
+  padding:1rem;
+}
+.card{
+  width: 250px;
+  height: 400px;
+}
+.card-img{
+  width: 100%;
+  height: 200px;
 
-.App-link {
-  color: #61dafb;
+}
+.card-body{
+  padding: 0px;
+}
+.card-title{
+  font-weight: 600;
+  margin-top: 10px;
+}
+.card-text span{
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.desc{
+  width: 100%;
+  height: 150px;
+  background-color: black;
+}
+.buttonadd{
+  background-color:white;
+  text-decoration-color: rgb(27, 24, 24);
+  
+  border-color: black;
+  width :150px;
+  align-items: center;
+  color:black;
+
+  margin-left:50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  
+  align-content: center;
+  
+}
+.buttonadd:hover{
+  
+    /* margin-top: 1px; */
+    cursor: pointer;
+    margin-top: -.001rem;
+    /* margin-bottom: .25rem; */
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    background-color:black;
+    color: white;
+    border-color: black;  
+
+      
+}
+.buttonremove:hover{
+  
+  /* margin-top: 1px; */
+  cursor: pointer;
+  margin-top: -.001rem;
+  /* margin-bottom: .25rem; */
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  background-color:rgb(6, 6, 6);
+  color: white;
+  border-color: black;  
+
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonremove{
+  background-color:white ;
+  text-decoration-color: #080707;
+  border-color: black;
+  color: black;
+  width :150px;
+  align-items: center;
+ 
+  margin-left:50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  text-align: center;
 }
